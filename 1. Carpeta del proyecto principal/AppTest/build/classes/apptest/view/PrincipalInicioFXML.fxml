@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import agendaalta.view.MostrarAltaController?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apptest.view.VentanaPrincipalController">
+   <top>
+      <AnchorPane prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: #248F8D;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="101.0" prefWidth="0.0" textAlignment="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#e3ff8c" />
+                        <Stop color="#ebebeb" offset="0.007662835249042145" />
+                        <Stop color="#e8175d" offset="0.5463917525773195" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="146.0" layoutX="369.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recurso/New%20Project.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="854.0" style="-fx-background-color: #248F8D;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="850.0" text="Creado JMBJ" textAlignment="RIGHT">
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="1.0" startX="0.9857142857142858">
+                     <stops>
+                        <Stop color="#e3ff8c" />
+                        <Stop color="#ebebeb" offset="0.007662835249042145" />
+                        <Stop color="#a2e3ff" offset="0.5463917525773195" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonHelp" mnemonicParsing="false" onAction="#manualDeAyuda" prefHeight="15.0" prefWidth="15.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recurso/help.png" />
+                           </image>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="35.0" top="35.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <VBox prefHeight="308.0" prefWidth="425.0" style="-fx-background-color: #EFF3CD;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="315.0" prefWidth="440.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <MostrarAltaController fx:id="iniciarSesion" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="428.0" titulo="Iniciar sesion" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <buttons>
+                      <Button fx:id="buttonLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eventAction" text="Entrar" />
+                    </buttons>
+                     <GridPane.margin>
+                        <Insets right="170.0" />
+                     </GridPane.margin>
+                  </ButtonBar>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="308.0" prefWidth="425.0" style="-fx-background-color: #EFF3CD;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="315.0" prefWidth="440.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="263.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <MostrarAltaController fx:id="registrarse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="428.0" titulo="Registrarse" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <buttons>
+                      <Button fx:id="buttonRegistro" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#registroEventAction" text="Registrarse" />
+                        <Button fx:id="buttonAdmin" alignment="CENTER" layoutX="360.0" layoutY="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ventanaLoginAdmin" text="Admin Login" />
+                    </buttons>
+                     <GridPane.margin>
+                        <Insets right="110.0" />
+                     </GridPane.margin>
+                  </ButtonBar>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #EFF3CD;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

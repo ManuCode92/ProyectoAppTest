@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import agendaalta.view.MostrarAltaController?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="426.0" style="-fx-background-color: #02d1ce;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apptest.view.VentanaAdminLoginController">
+   <children>
+      <VBox prefHeight="425.0" prefWidth="426.0" HBox.hgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="58.0" prefWidth="429.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="53.0" prefWidth="428.0" text="Administrador Test" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#e3ff8c" />
+                              <Stop color="#e3ff8c" offset="0.007662835249042145" />
+                              <Stop color="#79fcad" offset="0.5463917525773195" />
+                              <Stop color="#e5e9ff" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <VBox maxWidth="1.7976931348623157E308" prefHeight="426.0">
+               <children>
+                  <MostrarAltaController fx:id="adminTest" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="328.0" titulo="" />
+                  <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buttonInicio" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eventAction" prefHeight="40.0" prefWidth="115.0" text="Entrar" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonvolver" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eventAction" prefHeight="40.0" prefWidth="115.0" text="Volver" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
